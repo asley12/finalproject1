@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue_box">#216EBE</color>
+    <color name="red">#F52515</color>
+    <color name="darkgrey">#9B9A9A</color>
+    <color name="darkgrey100">#575555</color>
+    <color name="greylight">#D1D1D1</color>
+    <color name="green">#23DA1D</color>
+
+    !gradation color
+    <color name="deep_blue">#2230B1</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="violet">#5E50E4</color>
+    <color name="orange">#FF9800</color>
+    <color name="white">#ffff</color>
+    <color name="grey">#ACB0C0</color>
+
+    !transparent color
+    <color name="white_transparent">#40FFFFFF</color>
+    <color name = "white_transparent100">#00FFFFFF</color>
+    <!--<color name="whitetransparent50">1AACB0C0</color>-->
+
+    !login backgroud color
+    <color name="login_background">#40DFE2E6</color>
+    <color name="violet_transparent">#8576EB</color>
+
+</resources>

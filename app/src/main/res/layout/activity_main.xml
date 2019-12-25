@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_grad"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white_transparent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutButton_connect">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/print_doc"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/printdoc"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/print_photo"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/printimage"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/print_from_cloud"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/cloud"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/copy"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/copy"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/text_doc"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Print Document"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_photo"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Print Photos"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_cloud"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Print from Cloud"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_copy"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Copy"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/scan"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/doc_capture"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/doccapture"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/memory_access"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/memory"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/print_web"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/web"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/text_scan"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Scan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_doc_capture"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Document Capture"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_memory_access"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Memory Access"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_print_web"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Print Webpage"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/send_photo"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/sendpic"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/card_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/card_print"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/multi_roll_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/multi_roll_print"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/postcard_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/postcard"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/text_send_photo"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Send Photos"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_card_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Card Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_multi_roll_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Multi Roll Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_postcard_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Postcard Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/creative_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/creative_print"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/tri_d_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/d_print1"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_transparent100"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <Button
+                android:id="@+id/blank2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_transparent100"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineProvider="bounds"
+                android:outlineSpotShadowColor="@color/orange"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/text_creative_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Creative Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_tri_d_print"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="3D Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_blank1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_blank2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white_transparent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Epson iPrint"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/print_view_home_layout_new"
+        android:padding="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layoutButton_connect"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/printerView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutButton_connect"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@mipmap/imageedit_1_2682579499" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <LinearLayout
+        android:id="@+id/layoutButton_connect"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white_transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/printerView">
+
+        <Button
+            android:id="@+id/connect_printer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_transparent"
+            android:text="Printer is not connected"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/statusPrint_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap here to select your printer"
+            android:textAlignment="center"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

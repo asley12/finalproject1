@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="558dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/login_rounded"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="197dp"
+        android:layout_height="193dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="@string/todo"
+        android:orientation="horizontal"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@mipmap/onedrive_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/rec_round_inputlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+
+
+    <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@mipmap/email_icon" />
+
+        <EditText
+            android:id="@+id/email_address_field"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Email Address"
+            android:maxLength="20"
+            android:textSize="15dp"
+            android:textColorHint="@color/blue_box" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="360dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rec_round_inputlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@mipmap/password" />
+
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="15dp"
+            android:textColorHint="@color/blue_box"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rec_round_loginbutton"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/cancellogin_button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="230dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rec_round_cancel_loginbutton"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="192dp"-->
+        <!--android:layout_height="205dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:contentDescription="@string/todo"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:scaleX="0.5"-->
+        <!--android:scaleY="0.5"-->
+        <!--android:src="@mipmap/drive_icon"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="192dp"-->
+        <!--android:layout_height="205dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:contentDescription="@string/todo"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:src="@mipmap/onedrive_icon"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="192dp"-->
+        <!--android:layout_height="205dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:contentDescription="@string/todo"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:scaleX="0.5"-->
+        <!--android:scaleY="0.5"-->
+        <!--android:src="@mipmap/evernote_icon"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="192dp"-->
+        <!--android:layout_height="205dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:contentDescription="@string/todo"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--kurang dropbox-->
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
